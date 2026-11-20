@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bastau — сайттар, қосымшалар, Telegram боттар</title>
+  <meta name="description" content="Bastau — екі адамнан тұратын команда. Сайттар, қосымшалар, Telegram боттар мен дизайн жасаймыз.">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700&family=Golos+Text:wght@400;500;600&display=swap&subset=cyrillic-ext" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip" href="#main" data-i18n="skip">Негізгі мазмұнға өту</a>
+
+  <header class="header">
+    <div class="wrap header__inner">
+      <a class="brand" href="#top" aria-label="Bastau">
+        <svg class="brand__mark" viewBox="0 0 62 97" aria-hidden="true">
+          <path d="M6 0 H36 V97 H6 A6 6 0 0 1 0 91 V6 A6 6 0 0 1 6 0 Z" fill="var(--ink)"/>
+          <path d="M36 0 A23.5 23.5 0 0 1 36 47 Z" fill="var(--blue)"/>
+          <path d="M36 47 A25 25 0 0 1 36 97 Z" fill="var(--amber)"/>
+        </svg>
+        <span class="brand__word">bastau</span>
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Мәзір">
+        <a href="#services" data-i18n="nav.services">Қызметтер</a>
+        <a href="#process" data-i18n="nav.process">Жұмыс тәртібі</a>
+        <a href="#team" data-i18n="nav.team">Команда</a>
+      </nav>
+
+      <div class="header__tools">
+        <div class="lang" role="group" aria-label="Тіл / Язык / Language">
+          <button type="button" data-lang="kk" aria-pressed="true">ҚАЗ</button>
+          <button type="button" data-lang="ru" aria-pressed="false">РУС</button>
+          <button type="button" data-lang="en" aria-pressed="false">ENG</button>
+        </div>
+        <a class="btn btn--small" href="#signup" data-i18n="nav.signup">Тіркелу</a>
+        <button class="burger" type="button" aria-controls="nav" aria-expanded="false" aria-label="Мәзір">
+          <span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero" id="top">
+      <div class="wrap hero__grid">
+        <div class="hero__text">
+          <h1 class="hero__title" data-i18n="hero.title">Идеяңызды іске қосамыз.</h1>
+          <p class="hero__lead" data-i18n="hero.lead">Bastau — екі адамнан тұратын шағын команда. Сайттар, қосымшалар, Telegram боттар мен дизайн жасаймыз: алғашқы идеядан бастап іске қосылғанға дейін.</p>
+          <div class="hero__actions">
+            <a class="btn" href="#signup" data-i18n="hero.cta">Жобаны бастау</a>
+            <a class="link" href="#services" data-i18n="hero.more">Не істейміз</a>
+          </div>
+        </div>
+
+        <div class="hero__art" aria-hidden="true">
+          <svg class="mark" viewBox="0 0 62 97">
+            <path class="mark__stem" d="M6 0 H36 V97 H6 A6 6 0 0 1 0 91 V6 A6 6 0 0 1 6 0 Z"/>
+            <path class="mark__top" d="M36 0 A23.5 23.5 0 0 1 36 47 Z"/>
+            <path class="mark__bottom" d="M36 47 A25 25 0 0 1 36 97 Z"/>
+          </svg>
+        </div>
+      </div>
+
+      <div class="wrap meaning">
+        <p data-i18n="hero.meaning">Қазақ тілінде «бастау» — бір істің басы және судың шығатын көзі деген мағына береді.</p>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="section" id="services">
+      <div class="wrap">
+        <h2 class="h2" data-i18n="services.title">Не істейміз</h2>
+        <ul class="services">
+          <li class="service">
+            <span class="service__dot service__dot--blue" aria-hidden="true"></span>
+            <h3 data-i18n="services.web.t">Сайттар</h3>
+            <p data-i18n="services.web.d">Лендинг, интернет-дүкен, компания сайты. Телефонда да, компьютерде де дұрыс көрінеді.</p>
+          </li>
+          <li class="service">
+            <span class="service__dot service__dot--amber" aria-hidden="true"></span>
+            <h3 data-i18n="services.apps.t">Қосымшалар мен бағдарламалар</h3>
+            <p data-i18n="services.apps.d">Бизнеске арналған веб-қосымшалар мен ішкі құралдар: есеп, кесте, жазылу.</p>
+          </li>
+          <li class="service">
+            <span class="service__dot service__dot--blue" aria-hidden="true"></span>
+            <h3 data-i18n="services.bots.t">Telegram боттар</h3>
+            <p data-i18n="services.bots.d">Тапсырыс қабылдайтын, клиентті жазатын, хабарлама таратын боттар.</p>
+          </li>
+          <li class="service">
+            <span class="service__dot service__dot--amber" aria-hidden="true"></span>
+            <h3 data-i18n="services.design.t">Дизайн және анимация</h3>
+            <p data-i18n="services.design.d">Логотип, интерфейс, баннерлер және сайттағы анимациялар.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- PROCESS -->
+    <section class="section section--tint" id="process">
+      <div class="wrap">
+        <h2 class="h2" data-i18n="process.title">Қалай жұмыс істейміз</h2>
+        <ol class="steps">
+          <li class="step">
+            <span class="step__n" aria-hidden="true">1</span>
+            <h3 data-i18n="process.1.t">Танысу</h3>
+            <p data-i18n="process.1.d">Мақсатыңызды және не керек екенін бірге талқылаймыз.</p>
+          </li>
+          <li class="step">
+            <span class="step__n" aria-hidden="true">2</span>
+            <h3 data-i18n="process.2.t">Дизайн</h3>
+            <p data-i18n="process.2.d">Құрылымы мен көрінісін жасап, сізбен келісеміз.</p>
+          </li>
+          <li class="step">
+            <span class="step__n" aria-hidden="true">3</span>
+            <h3 data-i18n="process.3.t">Әзірлеу</h3>
+            <p data-i18n="process.3.d">Кодын жазып, әр кезеңде нәтижені көрсетіп отырамыз.</p>
+          </li>
+          <li class="step">
+            <span class="step__n" aria-hidden="true">4</span>
+            <h3 data-i18n="process.4.t">Іске қосу</h3>
+            <p data-i18n="process.4.d">Жобаны іске қосамыз және кейін де көмектесеміз.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- TEAM -->
+    <section class="section" id="team">
+      <div class="wrap">
+        <h2 class="h2" data-i18n="team.title">Команда</h2>
+        <p class="team__lead" data-i18n="team.lead">Біз екеуміз. Логотиптегі екі жарты шеңбер де — біз.</p>
+        <div class="team">
+          <figure class="member member--blue">
+            <div class="member__half" aria-hidden="true"></div>
+            <figcaption>
+              <strong data-i18n="team.m1.name">Қаршыға Асылбекұлы</strong>
+              <span data-i18n="team.role">Бірлескен негізін қалаушы</span>
+            </figcaption>
+          </figure>
+          <figure class="member member--amber">
+            <div class="member__half" aria-hidden="true"></div>
+            <figcaption>
+              <strong data-i18n="team.m2.name">Нұрхан Есенгелді</strong>
+              <span data-i18n="team.role">Бірлескен негізін қалаушы</span>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- SIGN UP -->
+    <section class="signup" id="signup">
+      <div class="wrap signup__grid">
+        <div class="signup__intro">
+          <h2 class="h2" data-i18n="signup.title">Жобаңызды бастайық</h2>
+          <p data-i18n="signup.lead">Тіркеліп, не керек екенін қысқаша жазыңыз. Бір күн ішінде хабарласамыз.</p>
+          <p class="signup__mail">
+            <span data-i18n="signup.or">Немесе тікелей жазыңыз:</span>
+            <a href="mailto:bastauteam@gmail.com">bastauteam@gmail.com</a>
+          </p>
+        </div>
+
+        <form class="form" id="signupForm" novalidate>
+          <div class="field">
+            <label for="f-name" data-i18n="form.name">Атыңыз</label>
+            <input id="f-name" name="name" type="text" autocomplete="name" required>
+          </div>
+          <div class="field-row">
+            <div class="field">
+              <label for="f-phone" data-i18n="form.phone">Телефон немесе Telegram</label>
+              <input id="f-phone" name="phone" type="text" autocomplete="tel" placeholder="+7 7__ ___ __ __">
+            </div>
+            <div class="field">
+              <label for="f-email">Email</label>
+              <input id="f-email" name="email" type="email" autocomplete="email" placeholder="name@mail.kz">
+            </div>
+          </div>
+          <div class="field">
+            <label for="f-service" data-i18n="form.service">Не керек?</label>
+            <select id="f-service" name="service">
+              <option value="site" data-i18n="form.opt.site">Сайт</option>
+              <option value="app" data-i18n="form.opt.app">Қосымша немесе бағдарлама</option>
+              <option value="bot" data-i18n="form.opt.bot">Telegram бот</option>
+              <option value="design" data-i18n="form.opt.design">Дизайн немесе анимация</option>
+              <option value="unknown" data-i18n="form.opt.unknown">Әлі білмеймін</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="f-msg" data-i18n="form.msg">Жоба туралы қысқаша</label>
+            <textarea id="f-msg" name="message" rows="4"></textarea>
+          </div>
+          <button class="btn btn--amber" type="submit" data-i18n="form.submit">Өтінім жіберу</button>
+          <p class="form__note" data-i18n="form.note">Батырманы басқанда пошта бағдарламаңыз дайын хатпен ашылады.</p>
+          <p class="form__status" id="formStatus" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer__inner">
+      <span>© <span id="year">2026</span> Bastau</span>
+      <a href="mailto:bastauteam@gmail.com">bastauteam@gmail.com</a>
+      <a href="https://github.com/Bastau-team" target="_blank" rel="noopener">GitHub</a>
+    </div>
+  </footer>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
