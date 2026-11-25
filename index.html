@@ -30,6 +30,7 @@
 
       <nav class="nav" id="nav" aria-label="Мәзір">
         <a href="#services" data-i18n="nav.services">Қызметтер</a>
+        <a href="#work" data-i18n="nav.work">Жұмыстар</a>
         <a href="#process" data-i18n="nav.process">Қалай жұмыс істейміз</a>
         <a href="#faq" data-i18n="nav.faq">Сұрақтар</a>
         <a href="#team" data-i18n="nav.team">Біз туралы</a>
@@ -115,6 +116,47 @@
             <p class="service__ex" data-i18n="s.design.ex">Мысалы: логотип, Instagram баннерлері, сайттағы анимация.</p>
           </li>
         </ul>
+      </div>
+    </section>
+
+    <!-- Жұмыстарымыз (портфолио)
+         Жаңа жұмыс қосу: төмендегі <article class="project"> блогын көшіріп,
+         мәтінін js/i18n.js ішіне үш тілде қосыңыз. Скриншот болса,
+         project__shot ішіне <img src="assets/work/..." alt=""> қойыңыз. -->
+    <section class="section" id="work">
+      <div class="wrap">
+        <div class="section__head">
+          <h2 class="h2" data-i18n="work.title">Жұмыстарымыз</h2>
+          <p class="section__lead" data-i18n="work.lead">Жасаған жобаларымыз. Жаңа жұмыстар осында қосылып отырады.</p>
+        </div>
+
+        <div class="work">
+          <article class="project">
+            <div class="project__shot" aria-hidden="true">
+              <div class="shot__bar"><span></span><span></span><span></span></div>
+              <div class="shot__page">
+                <svg class="shot__mark" viewBox="0 0 62 97">
+                  <path d="M6 0 H36 V97 H6 A6 6 0 0 1 0 91 V6 A6 6 0 0 1 6 0 Z" fill="var(--ink)"/>
+                  <path d="M36 0 A23.5 23.5 0 0 1 36 47 Z" fill="var(--violet)"/>
+                  <path d="M36 47 A25 25 0 0 1 36 97 Z" fill="var(--coral)"/>
+                </svg>
+                <div class="shot__lines"><i></i><i></i><i></i><b></b></div>
+              </div>
+            </div>
+            <div class="project__body">
+              <p class="project__type" data-i18n="work.p1.type">Сайт және дизайн</p>
+              <h3 data-i18n="work.p1.t">Bastau сайты</h3>
+              <p data-i18n="work.p1.d">Өз командамыздың сайты: үш тілде, телефонға бейімделген, өтінім формасы мен жиі қойылатын сұрақтар бөлімі бар.</p>
+              <a class="link" href="https://github.com/bastau-team/Site" target="_blank" rel="noopener" data-i18n="work.p1.link">Кодын GitHub-та көру</a>
+            </div>
+          </article>
+
+          <div class="project project--next">
+            <h3 data-i18n="work.next.t">Келесі жоба — сіздікі болуы мүмкін</h3>
+            <p data-i18n="work.next.d">Не керек екенін жазыңыз — бірге талқылап, жоспар құрамыз.</p>
+            <a class="btn" href="#contact" data-i18n="nav.cta">Өтінім қалдыру</a>
+          </div>
+        </div>
       </div>
     </section>
 

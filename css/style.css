@@ -326,3 +326,41 @@ a { color: inherit; }
   html { scroll-behavior: auto; }
   *, *::before, *::after { transition: none !important; }
 }
+
+/* ---------- Жұмыстарымыз ---------- */
+.work { display: grid; grid-template-columns: minmax(0, 1.6fr) minmax(0, 1fr); gap: 32px; align-items: stretch; }
+.project { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 28px; align-items: center; }
+.project__shot { background: var(--mist); border-radius: 14px; padding: 14px; border: 1px solid var(--line); }
+.shot__bar { display: flex; gap: 6px; margin-bottom: 12px; }
+.shot__bar span { width: 9px; height: 9px; border-radius: 50%; background: #CFCCDD; }
+.shot__page { background: var(--paper); border-radius: 8px; padding: 22px 20px; display: flex; gap: 18px; align-items: center; min-height: 150px; }
+.shot__mark { width: 40px; flex: none; }
+.shot__lines { display: grid; gap: 8px; flex: 1; }
+.shot__lines i { display: block; height: 8px; border-radius: 4px; background: var(--ink); }
+.shot__lines i:nth-child(1) { width: 90%; }
+.shot__lines i:nth-child(2) { width: 70%; }
+.shot__lines i:nth-child(3) { width: 80%; height: 6px; background: #CFCCDD; }
+.shot__lines b { display: block; width: 46%; height: 18px; border-radius: 9px; background: var(--violet); margin-top: 6px; }
+.project__type { color: var(--muted); font-size: .9375rem; font-weight: 500; }
+.project h3 { font-size: 1.5rem; margin-top: 4px; }
+.project__body p:not(.project__type) { margin-top: 10px; }
+.project__body .link { display: inline-block; margin-top: 16px; }
+.project--next {
+  display: flex; flex-direction: column; align-items: flex-start; justify-content: center; gap: 12px;
+  border: 2px dashed #CFCCDD; border-radius: 14px; padding: 28px;
+}
+.project--next h3 { font-size: 1.3125rem; margin: 0; }
+.project--next p { color: var(--muted); }
+.project--next .btn { margin-top: 6px; }
+
+@media (max-width: 1020px) {
+  .work { grid-template-columns: 1fr; }
+}
+@media (max-width: 600px) {
+  .project { grid-template-columns: 1fr; gap: 20px; }
+}
+.nav a { white-space: nowrap; }
+@media (max-width: 1180px) and (min-width: 901px) {
+  .header__cta { display: none; }
+  .nav { gap: 18px; }
+}
